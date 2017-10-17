@@ -1,18 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+
+import NavBar from './Components/NavBar';
+import HomeComponent from './Components/HomeComponent';
+import PortfolioComponent from './Components/PortfolioComponent';
+import ResumeComponent from './Components/ResumeComponent';
+import ConnectComponent from './Components/ConnectComponent';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <section className="hero is-fullheight"  style={{backgroundColor: '#F2B411'}}>
+          <NavBar active="home"/>
+
+          <div className="hero-body">
+            <div className="container">
+              <Route exact path={`${this.props.match.url}`} component={HomeComponent} />
+              <Route path={`${this.props.match.url}portfolio`} component={PortfolioComponent} />
+              <Route path={`${this.props.match.url}resume`} component={ResumeComponent} />
+              <Route path={`${this.props.match.url}connect`} component={ConnectComponent} />
+            </div>
+          </div>
+
+          <div className="hero-foot">
+            <div className="container">
+              <div className="content has-text-centered">
+                Footer here
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
