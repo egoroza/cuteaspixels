@@ -11,37 +11,32 @@ export default class NavBar extends Component {
 
   render () {
     return (
-      <div className="hero-head">
-        <header className="nav">
-          <div className="container">
-            <div className="nav-left">
-              <Link className="nav-item" to="/">
-                Logo Here
-              </Link>
-            </div>
+<section className="hero">
+  <div className="hero-body">
+    <div className="container">
 
-            <span className="nav-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+    <nav className="level">
+      <p className="level-item has-text-centered">
+        <a className="link is-info">About</a>
+      </p>
+      <p className="level-item has-text-centered">
+        <a className="link is-info">Resume</a>
+      </p>
+      <p className="level-item has-text-centered mytitle">
+        EMILY GOROZA
+      </p>
+      <p className="level-item has-text-centered">
+        <a className="link is-info">Portfolio</a>
+      </p>
+      <p className="level-item has-text-centered">
+        <a className="link is-info">Contact</a>
+      </p>
+    </nav>
 
-            <div className="nav-right nav-menu">
-              <Link className="nav-item" to="/">
-                Home
-              </Link>
-              <Link className="nav-item" to="/reporting">
-                Issue Reporting
-              </Link>
-              <Link className="nav-item" to="/tracking">
-                Issue Tracking
-              </Link>
 
-            </div>
-
-          </div>
-        </header>
-      </div>
+    </div>
+  </div>
+</section>
     );
   }
 };

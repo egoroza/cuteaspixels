@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="hero is-fullheight"  style={{backgroundColor: '#F2B411'}}>
+        <section className="hero is-fullheight">
           <NavBar active="home"/>
 
           <div className="hero-body">
@@ -26,7 +26,7 @@ class App extends Component {
           <div className="hero-foot">
             <div className="container">
               <div className="content has-text-centered">
-                Footer here
+                Copyright CuteAsPixels.com 2018.
               </div>
             </div>
           </div>

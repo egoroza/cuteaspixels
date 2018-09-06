@@ -4,16 +4,25 @@ import moment from 'moment';
 export default class HomeComponent extends Component {
   render() {
     return (
-      <div className="tile is-ancestor is-vertical">
-        <div className="tile">
-          <div className="container has-text-centered">
-            <h1 className="title">
-              Hello <strong><font style={{color: '#C25608'}}>Emily,</font></strong> welcome back.
-            </h1>
-            <h2 className="subtitle">
-              Today is <strong>{`${moment().format('MMMM Do YYYY')}`}</strong>, use the links in the navigation bar to get started!
-            </h2>
-          </div>
+      <div className="columns">
+        <div className="column">
+        <p>Hi there! My name is Emily Goroza. I'm a 21 year old computer scientist, creator, student, artist, daughter, mentor, explorer, and friend. 
+        Although not necessarily in that order. </p>
+        <br />
+        <p>I'm currently attending the University of Massachusetts, Amherst,
+        where I'm in the process of my fourth and final year at University. I'm currently pursuing both a Bachelor of Science in Computer Science as well as a Bachelor 
+        of Science in Mathematics with a concentration in mathematical computing.</p>
+        <br />
+        <p>I have a passion for <strong>design</strong>, <strong>technology</strong>, and <strong>people</strong>. I think self-care is super important, and I'm super interested 
+        in erasing the stigma of women and minorities in STEM related fields. I've always stressed the important of creativity, and I think it's what keeps me sane.</p>
+        <br />
+        <p>In my free time, I enjoy writing, drawing/painting, long-distance running, cooking, photography, and cinematography. I 
+        play piano, guitar, and percussion. I like to work, I currently have 4 jobs on campus, and I have a sweet little rabbit named Cinnabun.</p>
+        <br />
+        <p><a href="">Let's talk!</a></p>
+        </div>
+        <div className="column">
+        INSERT PIC HERE
         </div>
       </div>
     );
