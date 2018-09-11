@@ -17,19 +17,19 @@ export default class NavBar extends Component {
 
     <nav className="level">
       <p className="level-item has-text-centered">
-        <a className="link is-info">About</a>
+        <Link to="/" className="link is-info">About</Link>
       </p>
       <p className="level-item has-text-centered">
-        <a className="link is-info">Resume</a>
+        <Link to="/resume" className="link is-info">Resume</Link>
       </p>
       <p className="level-item has-text-centered mytitle">
         EMILY GOROZA
       </p>
       <p className="level-item has-text-centered">
-        <a className="link is-info">Portfolio</a>
+        <Link to="/portfolio" className="link is-info">Portfolio</Link>
       </p>
       <p className="level-item has-text-centered">
-        <a className="link is-info">Contact</a>
+        <Link to="/connect" className="link is-info">Contact</Link>
       </p>
     </nav>
 

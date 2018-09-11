@@ -7,7 +7,6 @@ import {
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import './Bulma.css';
 import './index.css';
 import './font-awesome/css/font-awesome.min.css';
 
